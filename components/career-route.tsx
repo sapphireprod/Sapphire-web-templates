@@ -53,7 +53,7 @@ export function CareerRoute({ stations }: { stations: Station[] }) {
         <div className="relative mt-16 grid grid-cols-[40px_minmax(0,1fr)] gap-4 md:grid-cols-[100px_minmax(0,1fr)] md:gap-10">
           <div className="relative" aria-hidden="true">
             <svg className="absolute inset-0 h-full w-full overflow-visible" viewBox="0 0 100 600" preserveAspectRatio="none">
-              <path d={ROUTE} fill="none" stroke="currentColor" strokeWidth="1.25" className="text-ink/15" vectorEffect="non-scaling-stroke" />
+              <path d={ROUTE} fill="none" stroke="currentColor" strokeWidth="1.25" className="text-ink/15" />
               <path
                 data-route-stroke=""
                 d={ROUTE}
@@ -61,7 +61,6 @@ export function CareerRoute({ stations }: { stations: Station[] }) {
                 stroke="currentColor"
                 strokeWidth="1.75"
                 className="text-copper"
-                vectorEffect="non-scaling-stroke"
               />
             </svg>
           </div>

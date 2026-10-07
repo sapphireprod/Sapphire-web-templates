@@ -83,11 +83,9 @@ export function ParallaxHero({ children }: { children: React.ReactNode }) {
       <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-[1440px] lg:grid-cols-2">
         <div className="flex h-full flex-col">{children}</div>
         <div className="relative min-h-[420px] lg:min-h-0">
-          <div
-            data-depth="0.42"
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-[16%] rounded-full border border-white/15"
-          />
+          <div className="pointer-events-none absolute inset-0 grid place-items-center" aria-hidden="true">
+            <div data-depth="0.42" className="size-[min(72%,440px)] rounded-full border border-white/15" />
+          </div>
           <div
             data-depth="1.05"
             data-parallax-core=""

@@ -6,6 +6,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 if (typeof window !== "undefined") {
+  ;(window as Window & { gsap: typeof gsap }).gsap = gsap
   gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, useGSAP)
   gsap.ticker.lagSmoothing(0)
 }

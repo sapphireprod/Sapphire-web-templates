@@ -6,14 +6,14 @@ import { projects, type Project } from "@/lib/content"
 function Mark({ project }: { project: Project }) {
   if (project.mark === "badge") {
     return (
-      <div data-cursor="reveal" className="badge-lift relative my-8">
+      <div data-cursor="reveal" className="badge-lift flex h-40 items-center">
         <Image
           src="/assets/tilt-badge.png"
           alt="Glass identification badge reading Elena Voss, Design Engineer."
           width={1152}
           height={864}
           sizes="(min-width: 1024px) 240px, 70vw"
-          className="h-auto w-[86%] select-none"
+          className="h-auto w-[88%] select-none"
         />
       </div>
     )
@@ -21,7 +21,7 @@ function Mark({ project }: { project: Project }) {
 
   if (project.mark === "rule") {
     return (
-      <div className="my-10 flex h-28 items-end" aria-hidden="true">
+      <div className="flex h-40 items-end pb-6" aria-hidden="true">
         <div className="h-px w-full bg-ink/20" />
         <div className="ml-3 h-16 w-px bg-copper" />
       </div>
@@ -29,7 +29,7 @@ function Mark({ project }: { project: Project }) {
   }
 
   return (
-    <div className="my-10 flex h-28 flex-col justify-center gap-3" aria-hidden="true">
+    <div className="flex h-40 flex-col justify-center gap-3" aria-hidden="true">
       <span className="h-px w-full bg-ink/15" />
       <span className="h-px w-4/5 bg-ink/40" />
       <span className="h-px w-2/3 bg-copper" />
